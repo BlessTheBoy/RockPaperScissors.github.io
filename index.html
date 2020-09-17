@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Javascript on steroids</title>
+</head>
+<body>  
+    <section>
+        <h2>Challeng 3: Rock, Paper, Scissors </h2>
+        <div class="rps-flex-box-container" id="result-div-3">
+            <img src="static/img/rock.jpg" alt="rock" id="rock" width="150px" height="150px" onclick="rpsGame(this)">
+            <img src="static/img/paper.jpg" alt="paper" id="paper" width="150px" height="150px" onclick="rpsGame(this)">
+            <img src="static/img/scissors.png" alt="scissors" id="scissors" width="150px" height="150px" onclick="rpsGame(this)">
+        </div>
+        <button style="background-color: green;" onclick="reverseFrontEnd()">Play Again!</button>
+        <div class="rps-flex-box-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>wins</th>
+                        <th>losses</th>
+                        <th>draws</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>    
+    
+    <script src="static/js/script.js"></script>
+</body>
+</html>
